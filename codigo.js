@@ -1,6 +1,4 @@
 //Celulares
-alert("Lista de celulares: celular1 celular2 y celular3");
-alert("Lista de apps: Google, Whatsapp, Twitter, e Instagram");
 class Celular {
     constructor(color, peso, tamanio, rdc, ram, nombre) {
         this.color = color;
@@ -13,17 +11,18 @@ class Celular {
 
     }
 
-    mobileInfo() {
-        document.write(
-            `
-            nombre: <b>${this.nombre}</b><br>
-             Color: <b>${this.color}</b><br>
-             Peso : <b>${this.peso}</b><br>
-             Tamanio : <b>${this.tamanio}</b><br>
-           Memoria ram : <b>${this.memoriaRam}</b><br>
-           Resolucion de video : <b>${this.resolucionDeCamara}</b><br>
-             `)
-    }
+    mobileInfo()
+ {
+    document.write(
+        `
+        nombre: <b>${this.nombre}</b><br>
+         Color: <b>${this.color}</b><br>
+         Peso : <b>${this.peso}</b><br>
+         Tamanio : <b>${this.tamanio}</b><br>
+       Memoria ram : <b>${this.memoriaRam}</b><br>
+       Resolucion de video : <b>${this.resolucionDeCamara}</b><br>
+         `)
+}
 }
 
 
@@ -36,22 +35,44 @@ lista_celulares.push("celular1", "celular2", "celular3")
 
 
 function selector() {
-    for (let i = 0; i < 3; i++) {
-        document.write(" ", lista_celulares[i], )
-    }
-    let cel_elegido = prompt("Que celular deseas ver?") 
-    {
-        if (cel_elegido == celular1.nombre) {
-            celular1.mobileInfo();
-        } else if (cel_elegido == celular2.nombre) {
-            celular2.mobileInfo()
-        } else if (cel_elegido == celular3.nombre) {
-            celular3.mobileInfo()
-        } else {
-            document.write("No esta disponible")
-        }
-    }
+    // for (let i = 0; i < 3; i++) {
+    //     document.write(" ", lista_celulares[i], )
+    // }
+    // let cel_elegido = prompt("Que celular deseas ver?") 
+    // {
+    //     if (cel_elegido == celular1.nombre) {
+    //         celular1.mobileInfo();
+    //     } else if (cel_elegido == celular2.nombre) {
+    //         celular2.mobileInfo()
+    //     } else if (cel_elegido == celular3.nombre) {
+    //         celular3.mobileInfo()
+    //     } else {
+    //         document.write("No esta disponible")
+    //     }
+    // }
 }
+let buscador = document.getElementById("producto");
+
+buscador.addEventListener("change", function(e){
+    document.write(e.target.value);
+    if(e.target.value == "celular1"){
+       celular1.mobileInfo();
+    }else if(e.target.value == "celular2"){
+        celular2.mobileInfo();
+    }else if(e.target.value == "celular3"){
+        celular3.mobileInfo();
+    }else{
+        document.write("Dispositivo no encontrado")
+    }
+})
+
+let buscar = document.getElementsByid("boton");
+buscar.addEventListener("submit", function(e){
+    e.preventDefault();
+    
+})
+
+
 
  //Aplicaciones
 class App {
@@ -82,7 +103,7 @@ let app4 = new App("Instagram","19.000", "8 stars", "1200MB")
 
 
 function selectorApp() {
-    let app_elegida = prompt("Que app deseas ver?") 
+    // let app_elegida = prompt("Que app deseas ver?") 
     {
         if (app_elegida == app1.nombre) {
             document.write("Elegiste: ", app1.nombre)
@@ -103,8 +124,10 @@ function selectorApp() {
     }
 }
 
-selector();
-selectorApp();
+
+
+
+
 
 
 

@@ -1,0 +1,23 @@
+header{
+    text-align: center;
+}
+
+#buscador{
+    text-align: center;
+    padding: 20px;
+}
+
+
+#celulares{
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+#celulares img{
+    width: 280px;
+}
+
+#celulares h3{
+    text-align: center;
+}
