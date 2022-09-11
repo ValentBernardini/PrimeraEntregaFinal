@@ -21,3 +21,42 @@ header{
 #celulares h3{
     text-align: center;
 }
+
+img{
+    height: 100%;
+  
+  }
+
+  td{
+    height: 100px;
+  }
+
+ h2{
+   text-align: center;
+   color:gray;
+ }
+
+ .precio{
+   display:block;
+   font-size:20px;
+ }
+
+ #carrito{
+    width: 30%; 
+    
+    height: 100vh;
+ }
+  
+#listaProductos{
+
+  width: 70%;
+}
+
+#contenedorPadre{
+
+  display:flex;
+}
+
+#producto{
+  text-align: center;
+}
