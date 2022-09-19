@@ -1,3 +1,4 @@
+
 //Celulares
 class Celular {
     constructor(color, peso, tamanio, rdc, ram, nombre) {
@@ -68,6 +69,14 @@ buscador.addEventListener("change", function(e){
 
 
 
+
+
+
+
+
+
+
+
  //Aplicaciones
 class App {
     constructor(nombre,descargas, puntuacion, peso) {
@@ -124,12 +133,25 @@ function selectorApp() {
 let carrito = [];
 
 let btn_compra = document.querySelectorAll(".botonCompra");
-console.log( btn_compra);
+
 
 for( let boton of btn_compra){
 
     boton.addEventListener("click" , agregar_a_carrito);
+    boton.addEventListener("click", alert_carrito)
 }
+
+function alert_carrito(){
+    Swal.fire(
+        'PRODUCTO AGREGADO',
+        'Que esperas a seguir comprando?',
+        'success'
+      )
+}
+
+
+    
+   
 
 
 function agregar_a_carrito(e){
@@ -217,8 +239,6 @@ btn_carrito.addEventListener("click" , function(){
 
 
 })
-
-
 
 
 
