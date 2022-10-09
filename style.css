@@ -1,6 +1,9 @@
+
 header{
     text-align: center;
+    color: #fff;
 }
+
 
 #buscador{
     text-align: center;
@@ -31,6 +34,10 @@ img{
     height: 100px;
   }
 
+  h1{
+    color: #414141;
+  }
+
  h2{
    text-align: center;
    color:gray;
@@ -43,7 +50,6 @@ img{
 
  #carrito{
     width: 30%; 
-    
     height: 100vh;
  }
   
@@ -53,15 +59,52 @@ img{
 }
 
 #contenedorPadre{
-
+  margin-top: 20px;
+  background-color: #414141;
+  padding: 20px;
   display:flex;
+  border-radius: 40px;
+}
+
+input{
+  border-radius: 10px;
+}
+
+button{
+  color: #fff;
+  background-color: #414141;
+  border-radius: 8px;
 }
 
 #producto{
   text-align: center;
 }
 
+#contenidocel{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-left: 300px;
+  padding-top: 60px;
+}
+
+.container2{
+  width: 200px;
+}
+
+#boton{
+  color: #fff;
+  background-color: black;
+  margin: 10px;
+}
+
+.donde-encontrarnos{
+  width: 800px;
+}
+
+
 #map {
 	height: 500px;
 	width: 100%;
 }
+

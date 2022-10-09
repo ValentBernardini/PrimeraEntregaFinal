@@ -1,0 +1,14 @@
+[
+    {
+        "celular": "Celular 1",
+        "precio": "$1000"
+    },
+    {
+        "celular": "Celular 2",
+        "precio": "$1200"
+    },
+    {
+        "celular": "Celular 3",
+        "precio": "$900"
+    }
+]
